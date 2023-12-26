@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 .DS_Store
+mobile
 dist
 dist-ssr
 coverage
@@ -29,3 +30,5 @@ stats.html
 *.njsproj
 *.sln
 *.sw?
+*.zip
+*.rar

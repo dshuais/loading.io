@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-03-13 15:45:54
  * @LastEditors: dushuai
- * @LastEditTime: 2023-04-23 11:12:54
+ * @LastEditTime: 2023-12-26 17:24:45
  * @description: vite.config
  */
 import { fileURLToPath, URL } from 'node:url'
@@ -81,9 +81,11 @@ export default defineConfig(({ mode, command }) => {
       return `${y}${m}${d}${h}${mm}${ss}`
     }
     const dirName: string = formatDate()
-    publicPath = `${env.VITE_APP_RESOURCE_URL}${dirName}`
+    // publicPath = `${env.VITE_APP_RESOURCE_URL}${dirName}`
+    publicPath = `${env.VITE_APP_RESOURCE_URL}`
     if (isProd || isUat) {
-      outputDir = `./mobile/${dirName}`
+      // outputDir = `./mobile/${dirName}`
+      outputDir = `./mobile`
     }
     if (isSit) {
       outputDir = dirName
