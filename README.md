@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-03-17 09:30:38
  * @LastEditors: dushuai
- * @LastEditTime: 2023-04-23 09:30:41
+ * @LastEditTime: 2023-12-26 16:01:08
  * @description: 框架说明
 -->
 # 项目名称
@@ -74,13 +74,11 @@ pnpm run dev
 |     └─popups.ts                 存放弹窗状态state的文件 按规则使用即可,可不更改
 │  └─typings                      ts类型定义文件目录
 |     └─app.d.ts                  app内数据类型
-|     └─cmb.d.ts                  cmb request/response的数据结构类型定义文件
 |     └─env.d.ts                  自定义npm上没有声明文件包的声明文件
 |     └─global.d.ts               全局window上数据类型
 |     └─request.d.ts              请求的request的数据结构类型定义文件
 |     └─response.d.ts             请求的response.data.data的数据结构类型定义文件
 │  └─utils                        常用的工具类函数文件目录
-|     └─cmbUtil.ts                cmb常用api
 |     └─is.ts                     is类型推断
 |     └─index.ts                  工具方法
 |     └─router.ts                 重写路由跳转
@@ -133,24 +131,6 @@ VITE_APP_VCONSOLE_ABLED = "false"
 
 #是否开启图片压缩（生产环境打开）
 VITE_APP_TINY = "true"
-
-#活动短链
-VITE_APP_CHAIN = "xxx"
-
-#活动秘钥
-VITE_APP_KEY = "xxx"
-
-#活动商户号
-VITE_APP_CORPNO = "xxx"
-
-#分享链接
-VITE_APP_SHARE_URL = "xxx"
-
-#降级页
-VITE_APP_ERROR_PAGE_URL = "xxx"
-
-#App卡券
-VITE_APP_CARD_URL = "xxx"
 
 #H5标题
 VITE_APP_TITLE = "项目名称"
