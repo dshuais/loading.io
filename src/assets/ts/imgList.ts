@@ -1,3 +1,3 @@
 /* eslint-disable */
-const imgList={}
+const imgList={"index":["index/hand.png"]}
 export default imgList
