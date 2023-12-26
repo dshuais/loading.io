@@ -23,7 +23,7 @@ pnpm install
 
 #### 运行
 ```
-pnpm run dev
+pnpm dev
 ```
 
 #### 打包
