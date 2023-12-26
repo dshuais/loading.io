@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-03-14 11:32:51
  * @LastEditors: dushuai
- * @LastEditTime: 2023-04-23 09:57:57
+ * @LastEditTime: 2023-12-26 17:36:31
  * @description: Index
 -->
 <script setup lang="ts">
@@ -32,6 +32,7 @@ const hanleInit = () => {
 // 微信落地页初始化
 const handleWechatInit = () => {
   return new Promise<string>(resolve => {
+    showPage.value = true
     resolve('Wechat 初始化完成')
   })
 }
@@ -59,8 +60,8 @@ const createWechatPromiseAll = () => {
   const loadInit = handleWechatInit()
   Promise.all([loadImgPromise, loadInit])
     .then(result => {
+      console.log('Wechat Init', result)
       setTimeout(() => {
-        console.log('Wechat Init', result)
         SET_LOGIN_STATE({ key: 'isLoading', val: true })
       }, 300)
     })

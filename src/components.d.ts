@@ -33,6 +33,5 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VanNoticeBar: typeof import('vant/es')['NoticeBar']
-    VanPopup: typeof import('vant/es')['Popup']
   }
 }
