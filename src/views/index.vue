@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-03-14 11:32:51
  * @LastEditors: dushuai
- * @LastEditTime: 2023-12-26 17:36:31
+ * @LastEditTime: 2023-12-26 17:42:38
  * @description: Index
 -->
 <script setup lang="ts">
@@ -79,13 +79,17 @@ watchEffect(() => {
       createPromiseAll()
     })
   } else {
-    if (isMpbankEnv || isDevEnv) {
-      login() // 招行登录
-    } else {
-      nextTick(() => {
-        createWechatPromiseAll()
-      })
-    }
+    console.log('初始化:>> ')
+    nextTick(() => {
+      createPromiseAll()
+    })
+    // if (isMpbankEnv || isDevEnv) {
+    //   login() // 招行登录
+    // } else {
+    //   nextTick(() => {
+    //     createWechatPromiseAll()
+    //   })
+    // }
   }
 })
 </script>
