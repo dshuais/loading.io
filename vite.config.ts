@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-03-13 15:45:54
  * @LastEditors: dushuai
- * @LastEditTime: 2023-12-26 17:24:45
+ * @LastEditTime: 2023-12-26 17:52:49
  * @description: vite.config
  */
 import { fileURLToPath, URL } from 'node:url'
@@ -236,7 +236,7 @@ export default defineConfig(({ mode, command }) => {
       // px 转 rem  postcss-plugin-px2rem  postcss-pxtorem
       postcss: {
         plugins: [
-          require('postcss-pxtorem')({
+          require('postcss-plugin-px2rem')({
             rootValue: 100,
             unitPrecision: 5, //保留rem小数点多少位
             propList: ['*'],
